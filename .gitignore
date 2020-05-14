@@ -9,7 +9,7 @@
 /heroku
 /public
 firebase.json
-.firebaserc
+/.firebaserc
 
 # dependencies
 /node_modules
@@ -48,3 +48,4 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+.firebase/hosting.cHVibGlj.cache
