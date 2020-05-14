@@ -45,4 +45,13 @@ export class ListComponent implements OnInit {
 
   }
 
+  onSubmit( todoForm: FormGroup ):void {
+
+    if ( !isNull( todoForm.value.text ) ) {
+      this.moduleService.addTodo( todoForm.value.text );
+      this.todoForm.reset();
+    }
+
+  }
+
 }
