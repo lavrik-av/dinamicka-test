@@ -9,7 +9,7 @@ import { ToDoItem } from '../store/models/todo.model';
 })
 export class ModuleService {
 
-  _todos$: Observable<ToDoItem[]>;
+  private todos$: Observable<ToDoItem[]>;
 
   constructor(
     private todoService: TodoService
@@ -17,8 +17,8 @@ export class ModuleService {
 
   getTotos():Observable<ToDoItem[]> {
 
-    this._todos$ =  this.todoService.getTodos();
-    return this._todos$;
+    this.todos$ =  this.todoService.getTodos();
+    return this.todos$;
 
   }
 
