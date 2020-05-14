@@ -1,0 +1,42 @@
+.list__ctr {
+
+  margin: 32px 0;
+
+  .mat-card {
+    margin: 8px
+  }
+
+  .todos__list {
+
+    max-width: 50vw;;
+    height: 50vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    .todo__ctr {
+
+      display: flex;
+      align-items: center;
+
+      .todo__ctr--content {
+
+        flex: 1;
+
+        .todo__ctr--content-date {
+          text-align: right
+        }
+      }
+    }
+  }
+
+  @media(max-width:769px){
+    .todos__list {
+      max-width: 75vw
+    }
+  }
+  @media(max-width:415px){
+    .todos__list {
+      max-width: 95vw
+    }
+  }
+}

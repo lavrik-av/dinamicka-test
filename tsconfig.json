@@ -17,7 +17,27 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths" : {
+      "@enviroments/*": [
+        "src/environments/*"
+      ],
+      "@app/*": [
+        "src/app/*"
+      ],
+      "@app/assets/*": [
+        "src/assets/*"
+      ],
+      "@services/*" : [
+        "src/app/modules/dinamika/services/*"
+      ],
+      "@models/*" : [
+        "src/app/modules/dinamika/models/*"
+      ],
+      "@components/*" : [
+        "src/app/modules/dinamika/components/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,

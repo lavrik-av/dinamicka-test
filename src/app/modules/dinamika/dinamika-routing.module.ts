@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { ListComponent } from '../dinamika/list/list.component';
-
+import { ListComponent } from '@components/list/list.component';
 
 const routes: Routes = [
   {

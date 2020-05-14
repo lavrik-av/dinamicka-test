@@ -2,14 +2,35 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "outDir": "./out-tsc/app",
-    "types": []
+    "types": [],
+    "baseUrl": "./",
+    "paths" : {
+      "@enviroments/*": [
+        "src/environments/*"
+      ],
+      "@app/*": [
+        "src/app/*"
+      ],
+      "@app/assets/*": [
+        "src/assets/*"
+      ],
+      "@services/*" : [
+        "src/app/modules/dinamika/services/*"
+      ],
+      "@models/*" : [
+        "src/app/modules/dinamika/models/*"
+      ],
+      "@components/*" : [
+        "src/app/modules/dinamika/components/*"
+      ]
+    }
   },
   "files": [
     "src/main.ts",
     "src/polyfills.ts"
   ],
   "include": [
-    "src/**/*.ts"
+    "src/**/*.d.ts"
   ],
   "exclude": [
     "src/test.ts",
